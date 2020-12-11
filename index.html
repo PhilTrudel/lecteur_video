@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Lecteur vidéo - Philippe Trudel</title>
+</head>
+<body>
+    <div class="container">
+        <video src="media/video.webm" class="video" poster="media/poster.jpg"></video>
+        <div class="progres">
+            <div class="barre"></div>
+        </div>
+        <div>
+            <button class="button play" alt="">Play</button>
+        </div>
+        <div>
+            <button class="button pause" alt="">Pause</button>
+        </div>
+        <div>
+            <button class="button stop" alt="">Stop</button>
+        </div>
+        <input id="vol-control" type="range" value="100" min="0" max="100" step="1"
+        oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"/>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
