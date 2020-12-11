@@ -22,7 +22,7 @@ html, body{
 input{
     position: absolute;
     top: 0;left: 0;
-    transform: translate(40%, 30%) rotate(-90deg);
+    transform: translate(400%, 2500%) rotate(-90deg) scale(2);
 }
 
 .container{
